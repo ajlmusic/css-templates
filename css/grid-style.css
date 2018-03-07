@@ -85,6 +85,7 @@ footer {
   .section-main {
     grid-row: span 2;
   }
+  
 
 
 }
@@ -159,7 +160,8 @@ nav {
 }
 .sidebar-nav-wrapper {
   padding: 1em;
-  background:#FFD043;
+  background: linear-gradient( #FFD043, #B98D07)
+  
   
 }
 .sidebar-nav-wrapper a {
