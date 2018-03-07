@@ -7,14 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Grid CSS</title>
   <link rel="stylesheet" href="css/grid-style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
 <body>
 
+
   <header>
     <nav>
-      <div class="nav-menu-button" style="cursor:pointer" onclick="openNav()">&#9776;
-      </div>
+      <button class="toggleNavBtn" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+      </button>
       <div class="nav-brand" id="appTitle"></div>
 
 
@@ -54,7 +57,7 @@
         esse?
       </p>
     </section>
-    <aside>
+    <aside class="aside-a">
       <h1>Aside One</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
@@ -63,7 +66,7 @@
         esse?
       </p>
     </aside>
-    <aside>
+    <aside class="aside-b">
       <h1>Aside Two</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
@@ -73,46 +76,68 @@
       </p>
     </aside>
   </main>
-  <aside class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <footer>
+    <div>&copy; 2018
+      <span id="appURL"></span>. All rights reserved.</div>
+    <!-- <div>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+        
+              <a href="#">About</a>
+            </div> -->
+  </footer>
 
-    <a href="#" class="nav-link">About</a>
 
-    <a href="#" class="nav-link">Services</a>
+  <aside class="sidebar">
 
-    <a href="#" class="nav-link">Contact</a>
+    <div class="sidebar-nav-wrapper">
+      <a href="/" class="nav-link">
+        <i class="fas fa-tachometer-alt"></i> Dashboard</a>
 
-    <a href="#" class="nav-link">Sign in</a>
+      <a href="#" class="nav-link">About</a>
 
-    <a href="/" class="nav-link">Dashboard</a>
+      <a href="#" class="nav-link">Services</a>
+
+      <a href="#" class="nav-link">Contact</a>
+
+      <a href="#" class="nav-link">Sign in</a>
+    </div>
+
 
 
 
   </aside>
-  <footer>
-    <div>&copy; 2018 MySite.com. All rights reserved.</div>
-    <!-- <div>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
 
-      <a href="#">About</a>
-    </div> -->
-  </footer>
   <script>
     const appTitle = "grid css template";
+    const appURL = "MySite.com"
+    document.getElementById('appURL').textContent = appURL;
     document.getElementById('appTitle').textContent = appTitle;
 
+
+    let toggle = false;
+    function toggleNav() {
+
+      (!toggle ? openNav() : closeNav());
+
+    }
     function openNav() {
-      document.querySelector(".sidenav").style.width = "200px";
-      document.querySelector("main").style.marginLeft = "200px";
-      document.querySelector("header").style.marginLeft = "200px";
+      document.querySelector(".sidebar").style.width = "250px";
+      document.querySelector("main").style.marginLeft = "250px";
+      document.querySelector("header").style.marginLeft = "250px";
+      document.querySelector("footer").style.marginLeft = "250px";
+      let close = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-times-circle'></i>";
+      toggle = true;
     }
 
     function closeNav() {
-      document.querySelector(".sidenav").style.width = "0";
-
+      document.querySelector(".sidebar").style.width = "0px";
       document.querySelector("main").style.marginLeft = "0px";
       document.querySelector("header").style.marginLeft = "0px";
+      document.querySelector("footer").style.marginLeft = "0px";
+      let open = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-bars'></i>";
+      toggle = false;
+
 
     }
   </script>

@@ -1,5 +1,3 @@
-
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -21,7 +19,7 @@ main {
   /* grid-column-gap: 2em;
   grid-row-gap: 0.5em; */
   grid-gap: 0.5em;
-  justify-items: center;
+  justify-items: left;
   padding: 0.5em;
   
 }
@@ -43,18 +41,27 @@ footer {
   border-top:solid #ffd043 10px;
   background: #000;
   grid-auto-rows: minmax(100px, auto);
+  color: white;
 }
+
+ header, main, footer, .sidebar {
+  transition: 0.3s;
+ }
+
+
+
 @media (min-width: 900px) {
   main {
     display: grid;
     grid-template-columns: 9fr 3fr;
     /* grid-auto-rows: 100px; */
-  grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
     /* grid-column-gap: 2em;
     grid-row-gap: 0.5em; */
     grid-gap: 0.5em;
     justify-items: center;
     padding: 0.5em;
+  
   }
   main > section {
     background: #ddd;
@@ -88,16 +95,16 @@ nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     /* grid-auto-rows: minmax(100px, auto); */
-  }
+}
  
-
 
 nav {
   background: black;
   color: white;
 }
+
 .nav-brand {
-  padding: 12px;
+  padding: 7px;
   font-size: 1.5rem;
   text-transform: uppercase;
   justify-self: center;
@@ -109,25 +116,22 @@ nav {
   text-transform: uppercase;
   justify-self: left;
 }
+
 .nav-wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr) ;
   justify-content: center;
-
 }
-.nav-item {
 
+.nav-item {
   list-style: none; 
 }
-
-
 
 .nav-link:link {
   display: block;
   text-decoration: none;
   text-align: center;
-  color: white;
-  
+  color: white;  
 }
 
 .nav-link:hover {
@@ -139,24 +143,52 @@ nav {
   color: white;
 }
 
-.sidenav {
+
+.sidebar {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #000;
   overflow-x: hidden;
-  /* transition: 0.5s; */
-  padding-top: 60px;
+  padding-top: 43px;
+  display: grid;
+ 
 }
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.sidebar-nav-wrapper {
+  padding: 1em;
+  background:#FFD043;
+  
+}
+.sidebar-nav-wrapper a {
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  margin-bottom: 1px;
+  background-color: #B98D07;
+  color: #000;
   display: block;
   transition: 0.3s;
+}
+.sidebar-nav-wrapper a:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+.toggleNavBtn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  padding-left: 12px;
+ 
+}
+
+.aside-a {
+  font-size: 1em;
 }
