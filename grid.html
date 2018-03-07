@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid CSS</title>
+  <link rel="stylesheet" href="css/grid-style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-menu-button" style="cursor:pointer" onclick="openNav()">&#9776;
+      </div>
+      <div class="nav-brand" id="appTitle"></div>
+
+
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Section One</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
+        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
+        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
+        esse?
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
+        at architecto? Cum dolore incidunt eos sequi esse.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
+        at architecto? Cum dolore incidunt eos sequi esse.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
+        at architecto? Cum dolore incidunt eos sequi esse.
+      </p>
+    </section>
+    <section>
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
+        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
+        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
+        esse?
+      </p>
+    </section>
+    <aside>
+      <h1>Aside One</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
+        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
+        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
+        esse?
+      </p>
+    </aside>
+    <aside>
+      <h1>Aside Two</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
+        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
+        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
+        esse?
+      </p>
+    </aside>
+  </main>
+  <aside class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="#" class="nav-link">About</a>
+
+    <a href="#" class="nav-link">Services</a>
+
+    <a href="#" class="nav-link">Contact</a>
+
+    <a href="#" class="nav-link">Sign in</a>
+
+    <a href="/" class="nav-link">Dashboard</a>
+
+
+
+  </aside>
+  <footer>
+    <div>&copy; 2018 MySite.com. All rights reserved.</div>
+    <!-- <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+
+      <a href="#">About</a>
+    </div> -->
+  </footer>
+  <script>
+    const appTitle = "grid css template";
+    document.getElementById('appTitle').textContent = appTitle;
+
+    function openNav() {
+      document.querySelector(".sidenav").style.width = "200px";
+      document.querySelector("main").style.marginLeft = "200px";
+      document.querySelector("header").style.marginLeft = "200px";
+    }
+
+    function closeNav() {
+      document.querySelector(".sidenav").style.width = "0";
+
+      document.querySelector("main").style.marginLeft = "0px";
+      document.querySelector("header").style.marginLeft = "0px";
+
+    }
+  </script>
+</body>
+
+</html>

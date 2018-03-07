@@ -1,0 +1,90 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: #ffd043;
+  color: #fff;
+  margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;  
+  }
+    
+
+  .main {
+    order: 1;
+  }
+  .sidenav1 {
+    order: 2
+  }
+  .sidenav2 
+  {
+  order: 3;
+  }
+
+}
+
+.nav {
+  height: 50px;
+  background: black;
+  color: white;
+  display: flex;
+}
+.nav-brand {
+  padding: 12px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  flex: 1;
+}
+.nav-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  flex: 1;
+  list-style: none;
+  
+}
+
+
+.container {
+  padding: 0px;
+  display: flex;
+  min-height: 300px;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main {
+  flex: 3;
+  background: #fff;
+  color: black;
+  padding: 24px;
+ 
+  order: 2;
+}
+
+.sidenav {
+  flex: 1;
+  background: #ffd043;
+  color: rgba(255, 255, 100, 2.5);
+ 
+  order: 1;
+}
+
+.sidenav2 {
+  flex: 1;
+  background:blue;
+  color: rgba(255, 255, 100, 2.5);
+  
+  order: 3;
+}
