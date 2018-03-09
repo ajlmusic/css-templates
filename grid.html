@@ -13,82 +13,37 @@
 <body>
 
 
-  <header>
-    <nav>
-      <button class="toggleNavBtn" onclick="toggleNav()">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="nav-brand" id="appTitle"></div>
+  <div class="container">
+      <header>
+         <nav>
+           <button class="toggleNavBtn" onclick="toggleNav()">
+             <i class="fas fa-bars"></i>
+           </button>
+           <div class="nav-brand" id="appTitle"></div>
+        </nav>
 
+      </header>
+    
+      <main>
+        <div>ITEM 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, velit. Et labore mollitia consectetur voluptatum repellendus maxime asperiores aut veniam consequuntur. Fuga asperiores quas incidunt!</div>
+        <div>ITEM 2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nihil cumque quod aliquid autem reprehenderit fugiat. Iure deserunt quisquam impedit corporis ex natus magnam officiis.</div>
+        <div>ITEM 3 - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus impedit numquam quae! Voluptatum reprehenderit fugiat facilis, similique soluta a recusandae commodi eum voluptates ducimus facere.</div>
+        <div>ITEM 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus neque ullam corporis perspiciatis a eaque minus voluptatem pariatur iusto, alias, soluta voluptates repudiandae atque.</div>
+        <!-- <div>ITEM 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam eum impedit dolore, adipisci at inventore officiis, eos cumque, pariatur facilis assumenda ab aliquid illum.</div>
+        <div>ITEM 6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facere hic recusandae, culpa accusamus quia maiores, aliquam placeat soluta debitis, qui odit? Soluta, quas totam!</div>
+        <div>ITEM 7 - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dolore nesciunt repellat! Soluta velit quas quia laboriosam ullam voluptatibus, blanditiis itaque, quo hic deleniti illum?</div>
+        <div>ITEM 8 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet officiis in. Sunt fuga ut magnam eum mollitia consequuntur, iusto expedita accusantium! Reprehenderit, nesciunt soluta.</div>
+        <div>ITEM 9 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptates eius praesentium aliquid odio, sed, unde consequuntur in cupiditate necessitatibus recusandae, nulla impedit rerum delectus?</div> -->
+      </main>
+      <footer>
+        <div>&copy; 2018
+          <span id="appURL"></span>. All rights reserved.</div>
+    
+      </footer>
 
+  </div>
 
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Section One</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
-        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
-        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
-        esse?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
-        at architecto? Cum dolore incidunt eos sequi esse.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
-        at architecto? Cum dolore incidunt eos sequi esse.
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam commodi doloribus beatae officiis eaque illo eligendi
-        at architecto? Cum dolore incidunt eos sequi esse.
-      </p>
-    </section>
-    <!-- <section>
-      <h1>Section Two</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
-        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
-        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
-        esse?
-      </p>
-    </section> -->
-    <aside class="aside-a">
-      <h1>Aside One</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
-        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
-        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
-        esse?
-      </p>
-    </aside>
-    <!-- <aside class="aside-b">
-      <h1>Aside Two</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem, quos nesciunt cum culpa id odio aut magnam aperiam
-        libero deserunt alias porro dignissimos, ullam maxime, qui delectus dolores laborum? Saepe ex inventore optio reiciendis
-        dolorum quisquam aliquid atque provident voluptates, fugiat officia fugit temporibus incidunt odio quibusdam deserunt
-        esse?
-      </p>
-    </aside> -->
-  </main>
-  <footer>
-    <div>&copy; 2018
-      <span id="appURL"></span>. All rights reserved.</div>
-    <!-- <div>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-        
-              <a href="#">About</a>
-            </div> -->
-  </footer>
-
-
-  <aside class="sidebar">
+  <div class="sidebar">
 
     <div class="sidebar-nav-wrapper">
       <a href="/" class="nav-link">
@@ -106,41 +61,41 @@
 
 
 
-  </aside>
-
-  <script>
-    const appTitle = "grid css template";
-    const appURL = "MySite.com"
-    document.getElementById('appURL').textContent = appURL;
-    document.getElementById('appTitle').textContent = appTitle;
 
 
-    let toggle = false;
-    function toggleNav() {
-
-      (!toggle ? openNav() : closeNav());
-
-    }
-    function openNav() {
-      document.querySelector(".sidebar").style.width = "250px";
-      document.querySelector("main").style.marginLeft = "250px";
-      document.querySelector("header").style.marginLeft = "250px";
-      document.querySelector("footer").style.marginLeft = "250px";
-      let close = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-times-circle'></i>";
-      toggle = true;
-    }
-
-    function closeNav() {
-      document.querySelector(".sidebar").style.width = "0px";
-      document.querySelector("main").style.marginLeft = "0px";
-      document.querySelector("header").style.marginLeft = "0px";
-      document.querySelector("footer").style.marginLeft = "0px";
-      let open = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-bars'></i>";
-      toggle = false;
+    <script>
+      const appTitle = "aamis";
+      const appURL = "University of Southern Mississippi - Office of the Provost"
+      document.getElementById('appURL').textContent = appURL;
+      document.getElementById('appTitle').textContent = appTitle;
 
 
-    }
-  </script>
+      let toggle = false;
+      function toggleNav() {
+
+        (!toggle ? openNav() : closeNav());
+
+      }
+      function openNav() {
+        document.querySelector(".sidebar").style.width = "250px";
+        document.querySelector("main").style.marginLeft = "250px";
+        document.querySelector("header").style.marginLeft = "250px";
+        document.querySelector("footer").style.marginLeft = "250px";
+        let close = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-times-circle'></i>";
+        toggle = true;
+      }
+
+      function closeNav() {
+        document.querySelector(".sidebar").style.width = "0px";
+        document.querySelector("main").style.marginLeft = "0px";
+        document.querySelector("header").style.marginLeft = "0px";
+        document.querySelector("footer").style.marginLeft = "0px";
+        let open = document.querySelector('.toggleNavBtn').innerHTML = "<i class='fas fa-bars'></i>";
+        toggle = false;
+
+
+      }
+    </script>
 </body>
 
 </html>
